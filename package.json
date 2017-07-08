@@ -4,7 +4,9 @@
   "private": true,
   "dependencies": {
     "react": "^15.6.1",
+    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.6.1",
+    "react-event-calendar": "^0.3.0",
     "react-menu-bar": "^2.0.4",
     "react-scripts": "1.0.10"
   },
