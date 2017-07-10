@@ -1,3 +1,4 @@
+import './styles/index.scss';
 import React, { Component } from 'react';
 
 import './components/public/App.css';
@@ -17,9 +18,9 @@ class App extends Component {
 
     <div className='App'>
 
-            <Header header/>
+            <Header />
 
-            <Calender calender/>
+            <Calender />
 
 
 
