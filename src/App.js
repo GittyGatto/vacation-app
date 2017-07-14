@@ -1,34 +1,36 @@
-import './styles/index.scss';
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {Calendar, CalendarControls} from 'react-yearly-calendar';
+import './components/App.css';
+import './components/Calendar.css';
 
-import './components/public/App.css';
-
-import Calender from './components/Calender';
 import Header from './components/Header';
 
 class App extends Component {
 
-  render() {
+
+
+    render() {
+
+
+        function onDatePicked(date) {
+            alert(date);
+        }
+
+
+        return (
+
+            <div className='App'>
+
+                <Header />
+
+                <Calendar onPickDate={onDatePicked}/>
 
 
 
+            </div>
 
-
-    return (
-
-    <div className='App'>
-
-            <Header />
-
-            <Calender />
-
-
-
-
-    </div>
-
-    );
-  }
+        );
+    }
 }
 
 export default App;
